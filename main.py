@@ -21,7 +21,7 @@ Material Price = {materialPrice}
     for itr, item in enumerate(data_first_fit):
         lst[itr].append(item.waste())
 
-    fig = plot_data_bars(lst, materialPrice)
+    fig = plot_data_bars(lst, materialPrice, materialSize)
     tab2.pyplot(fig)
 
     fn = f'{datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")}.png'

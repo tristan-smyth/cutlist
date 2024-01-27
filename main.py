@@ -13,7 +13,7 @@ def entryButtonCall():
 Material Price = {materialPrice}
 {materialLengths}"""
 
-    pricePerLen = materialPrice * materialSize
+    pricePerLen = float(materialPrice) * float(materialSize)
 
     data_first_fit = first_fit(read_data_string(data))
 

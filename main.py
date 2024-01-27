@@ -13,6 +13,8 @@ def entryButtonCall():
 Material Price = {materialPrice}
 {materialLengths}"""
 
+    pricePerLen = materialPrice * materialSize
+
     data_first_fit = first_fit(read_data_string(data))
 
     lst = []
@@ -21,7 +23,7 @@ Material Price = {materialPrice}
     for itr, item in enumerate(data_first_fit):
         lst[itr].append(item.waste())
 
-    fig = plot_data_bars(lst, materialPrice, materialSize)
+    fig = plot_data_bars(lst,pricePerLen)
     tab2.pyplot(fig)
 
     fn = f'{datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")}.png'

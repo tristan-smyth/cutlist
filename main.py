@@ -40,7 +40,7 @@ Material Price = {materialPrice}
 
 defaultText = """2 x 2"""
 
-materialSize = tab1.text_input("Material Size (m)", value=3)
-materialPrice = tab1.text_input("Material Price (per/length)", value=9.99)
+materialSize = tab1.text_input("Material Length (m)", value=3)
+materialPrice = tab1.text_input("Material Price (per/m)", value=9.99)
 materialLengths = tab1.text_area("Lengths", value=defaultText)
 entryButton = tab1.button(label="Calculate", on_click=entryButtonCall)

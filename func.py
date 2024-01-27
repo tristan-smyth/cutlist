@@ -101,6 +101,6 @@ def plot_data_bars(data, price):
     ax.set_yticklabels(range(1, len(data) + 1))  # Set y-tick labels as sequential numbers starting from 1
     ax.set_xlim(0, max(map(sum, data)))  # Set x-axis limit based on maximum total length
 
-    plt.title(f"Price = £{float(price) * len(data)} | Wastage = {format_decimal(wastage)}")
+    plt.title(f"Price = £{float(price) * len(data)} | Wastage = {format_decimal(wastage)}m")
 
     return fig

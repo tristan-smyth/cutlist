@@ -34,7 +34,7 @@ def read_data_string(string: str) -> dict:
         for i in range(item[0]):
             endList.append(item[1])
 
-    endList.sort()
+    endList.sort(reverse=True)
 
     # Format Material Length and Material Price and add them to dictionary
     dataDict["MaterialLength"] = int(data[0].split("=")[1].replace(" ", ""))
